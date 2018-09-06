@@ -1,10 +1,1 @@
-sum = 0
-num1 = 1
-num2 = 2
-
-while num1 < 4000000
-    num1 = (num2 = num1 + num2) - num1
-    if (num1 % 2 == 0)
-        sum += num1
-
-console.log(sum)
+console.log (i for i in [1..4000000] when i%2 is 0 and (Math.sqrt(5*i*i-4) % 1 is 0 or Math.sqrt(5*i*i+4) % 1 is 0)).reduce (a,b) -> a+b
